@@ -4,13 +4,11 @@
  * and open the template in the editor.
  */
 package com.mycompany.car;
-
-
-
-/**
- *
- * @author PC User
- */
+import java.io.File;
+import java.io.IOException;
+import org.codehaus.jackson.map.ObjectMapper;
+import java.util.ArrayList;
+import java.util.*;
 public class JsonJacksonObject {
      public static void main(String args[]){
          
