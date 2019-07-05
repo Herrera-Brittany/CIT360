@@ -1,5 +1,6 @@
 import java.io.*;  
 import java.sql.*;  
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.ServletException;  
 import javax.servlet.http.*;  
 import java.sql.Connection;
@@ -7,7 +8,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 // import the Vector class from util package.
 
-
+@WebServlet(name = "Find", urlPatterns={"/find"})
 
 public class Find extends HttpServlet {  
   
