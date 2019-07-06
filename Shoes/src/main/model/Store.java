@@ -23,7 +23,7 @@ public class Store {
 
 //	@Override
 //	public String toString() {
-//		return "Library [books=" + books + "]";
+//		return "Store [shoes=" + shoes + "]";
 //	}
 
 	@Override

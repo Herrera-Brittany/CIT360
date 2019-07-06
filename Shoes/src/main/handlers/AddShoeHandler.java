@@ -21,23 +21,24 @@ public class AddShoeHandler implements Handler {
 		String material = scanner.nextLine();
 		System.out.print("Enter a Color: ");
 		String color = scanner.nextLine();
+                
 		
-		int i = 1;
-		Style[] styles = Style.values();
-		int styleSelection = 0;
-		while (styleSelection < 1 || styleSelection > style.length) {
-			for (Style style : styles) {
-				System.out.println(i++ + "-" + style.toString());
-			}
-			System.out.print("Select a style: ");
-			styleSelection = GetNextInt(scanner);
-			i = 1;
-		}
-		Style selectedStyle = styles[styleSelection - 1];
+int i = 1;
+Style[] styles = Style.values();
+int styleSelection = 0;
+while (styleSelection < 1 || styleSelection > styles.length) {
+	for (Style style : styles) {
+		System.out.println(i++ + "-" + style.toString());
+	}
+	System.out.print("Select a style: ");
+	styleSelection = GetNextInt(scanner);
+	i = 1;
+}
+Style selectedStyle = styles[styleSelection - 1];
 
-		Shoe newShoe = new Shoe(style, material, color);
-		store.addShoe(newShoe);
-		return null;
+Shoe newShoe = new Shoe(style, material, color);
+store.addShoe(newShoe);
+	return null;
 	}
 
 	private int GetNextInt(Scanner scanner) {
