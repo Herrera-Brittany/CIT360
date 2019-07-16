@@ -1,14 +1,13 @@
-
 package main.model;
 
 public enum Style {
-
+	
 	WESTERN("Western"),
-	ATHLETIC("Athletic"),
-	DRESS("Dress"),
 	CASUAL("Casual"),
-	SLIPPERS("Slippers"),
-	WATER("Water");
+	ATHLETIC("Athletic"),
+	BUSINESS("Business"),
+	FORMAL("Formal"),
+	HIKING("Hiking");
 	
 	private String name;
 	

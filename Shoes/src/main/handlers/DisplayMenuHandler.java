@@ -1,9 +1,7 @@
 package main.handlers;
+
 import java.util.HashMap;
 import java.util.Scanner;
-
-
-    
 
 public class DisplayMenuHandler implements Handler {
 

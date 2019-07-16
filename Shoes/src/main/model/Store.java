@@ -1,20 +1,26 @@
-
 package main.model;
+
 import java.util.ArrayList;
 
 public class Store {
-    
-
+	
 	private ArrayList<Shoe> shoes;
 
 	public Store() {
 		shoes = new ArrayList<>();
-		String western = "western";
-		String leather = "leather";
-		String black = "black";
+		String gucci = "Gucci";
+		String leather = "Leather";
+		String imported = "Imported";
 		
-		shoes.add(new Shoe(western, "leather", black));
-	
+		shoes.add(new Shoe(gucci, "Imported", leather, Style.BUSINESS));
+		shoes.add(new Shoe(gucci, "Imported", leather, Style.BUSINESS));
+		shoes.add(new Shoe(gucci, "Imported", leather, Style.BUSINESS));
+		
+		shoes.add(new Shoe(gucci, "Domestic", leather, Style.CASUAL));
+		shoes.add(new Shoe(gucci, "Domestic", leather, Style.CASUAL));
+		shoes.add(new Shoe(gucci, "Domestic", leather, Style.CASUAL));
+		shoes.add(new Shoe(gucci, "Imported", leather, Style.CASUAL));
+		shoes.add(new Shoe(gucci, "Imported", leather, Style.CASUAL));
 	}
 	
 	public void addShoe(Shoe shoe) {
@@ -23,7 +29,7 @@ public class Store {
 
 //	@Override
 //	public String toString() {
-//		return "Store [shoes=" + shoes + "]";
+//		return "Library [books=" + books + "]";
 //	}
 
 	@Override
