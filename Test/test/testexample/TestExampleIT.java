@@ -82,7 +82,7 @@ public class TestExampleIT {
 //}
 @Test
 public void assertTrue() {
-    int a = 30;
+    int a = 21;
     int b = 20;
        Assert.assertTrue(a>b);
 }

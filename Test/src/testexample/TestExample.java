@@ -29,8 +29,10 @@ public void FailingTest_thenFailed() {
         
     fail("FAIL - test not completed");
 }
-    public void assertTrue() {
-       Assert.assertTrue(30<20);
+    public void assertTrue(int a, int b) {
+        a = 30;
+        b = 20;
+     
        
     }
     public void assertFalse() {
@@ -49,20 +51,20 @@ public void FailingTest_thenFailed() {
     public void assertSame() {
         String expected= "Bree";
         String actual = "Bella";
-        Assert.assertSame(expected, actual);
+    
     }
    public void assertNotSame() {
        String expected= "Bree";
         String actual = "Bella";
-        Assert.assertNotSame(expected, actual);
+        
     }
    public void assertNotNull() {
        String expected= "Bree";
-       Assert.assertNotNull(expected);
+       
    }
       public void assertNull() {
-       String expected= "Bree";
-       Assert.assertNull(expected);
+       String expected= null;
+       
       }
    }
     
